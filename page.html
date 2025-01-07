@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #7edb92, #89e0ab);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            background: #85dda2;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #a1e490;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+
+        .hero h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h3 {
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .card h4 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .contact {
+            background: #f1f1f1;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            background: #81e7ac;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #6ccf79;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Page</h1>
+    </header>
+
+    <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="welcome" class="hero">
+        <img src="recycle .jpeg" alt="Hero Image">
+        <h2>Make Recycling Easy</h2>
+    </section>
+
+    <section id="about" class="content">
+        <h3>About Us</h3>
+        <img src="Save the nature.jpeg" alt="About Us">
+        <p>ScrapCycle mainly focuses on recycling and repurposing scrap materials. It mainly aims to create an online platform dedicated to the reuse and recycling of household scraps. This project addresses the growing need for sustainable waste management by providing a user-friendly website where individuals can buy and sell second-hand items, including clothes, furniture, electronics, and many more. By facilitating the exchange of reusable goods, ScrapCycle promotes environmental sustainability, reduces landfill waste, and encourages a circular economy. The platform includes features such as detailed item listings, user reviews, secure transactions, and local pickup options to enhance user experience and trust. Ultimately, ScrapCycle seeks to build a community of environmentally conscious consumers who contribute to a greener future through the responsible reuse of household items</p>
+    </section>
+
+    <section id="services" class="content">
+        <h3>Our Services</h3>
+        <div class="sections">
+            <div class="card">
+                <img src="Scrap Collection.jpeg" alt="Scrap Collection">
+                <h4>Scrap Collection</h4>
+                <p>"Turning Waste into Worth – Your Trusted Scrap Collection Partner!"</p>
+            </div>
+            <div class="card">
+                <img src="Recycling.jpeg" alt="Recycling Solutions">
+                <h4>Recycling Solutions</h4>
+                <p>"Reimagining Resources, Redefining Tomorrow"</p>
+            </div>
+            <div class="card">
+                <img src="Sustainability Consulting.jpeg" alt="Sustainability Consulting">
+                <h4>Sustainability Consulting</h4>
+                <p>Empowering a Greener Tomorrow – Sustainable Solutions Today!.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Landing Page Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
